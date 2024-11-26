@@ -1,0 +1,45 @@
+/* lg */
+@media screen and (min-width:1024px) {
+    .site-card {
+        width: 85%;
+        padding: 25px 10px 25px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+    .site-card h4 {
+        padding-left: 50px;
+    }
+
+    form div:first-child,
+    form+div {
+        width: 75%;
+    }
+
+
+    .site-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+
+        border-top: 45px solid transparent;
+        border-left: 45px solid #ff70a6;
+        border-bottom: 45px solid transparent;
+        transform: translateX(100%);
+        filter: drop-shadow(0px 2px 8px rgb(0 0 0 / 20%));
+    }
+
+    #siteData {
+        align-items: center;
+    }
+
+    .site-card .star {
+        width: 70px;
+    }
+}
